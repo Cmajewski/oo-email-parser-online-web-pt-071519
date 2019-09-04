@@ -7,10 +7,7 @@ class EmailAddressParser
   end
 
   def parse
-  new_email=@email_addresses.split("/ ,/").reject {|x| x.empty?}
-  new_email
-  binding.pry
-
+  new_email=@email_addresses.split("/[ ,]/")
   end
 end
 
